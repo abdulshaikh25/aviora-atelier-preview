@@ -257,7 +257,6 @@ dialog.player::backdrop{background:rgba(14,12,9,.92)}
 .disciplines{display:grid;gap:56px}
 .disc{display:flex;flex-direction:column;gap:20px;min-width:0}
 .disc .who{color:var(--ink);font-weight:500;font-size:18px}
-.disc .lede::first-letter{font-family:var(--f-display);float:left;font-size:4.1em;line-height:.82;padding:6px 10px 0 0;color:var(--gold-text)}
 .ledger{list-style:none;margin:6px 0 0;padding:0;border-top:1px solid var(--rule)}
 .ledger li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:16px}
 .ledger li span:last-child{color:var(--ink-2);text-align:right}
@@ -400,6 +399,8 @@ blockquote{margin:0}
 .pano .frame.interior img{width:100%;height:100%;object-fit:cover}
 @media (max-width:699px){.pano .frame.interior{aspect-ratio:4/3}}
 @media (min-width:1000px){.colophon{padding-right:200px}}
+.cmp-hint{display:none;margin:0 0 8px;font-family:var(--f-label);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-text)}
+@media (max-width:620px){.cmp-hint{display:block}}
 .hero-vid{width:100%;height:100%;object-fit:cover;object-position:60% center;filter:sepia(.18) saturate(.9)}
 
 .concerns{list-style:none;margin:0;padding:0;display:grid;gap:36px 24px;grid-template-columns:1fr 1fr}
@@ -427,7 +428,7 @@ blockquote{margin:0}
 
 <header class="site-header" id="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Aviora Atelier, home">
+    <a class="brand" href="../" aria-label="Aviora Atelier, home">
       <span class="name">AVIORA</span>
       <span class="sub">Atelier · Mumbai</span>
     </a>
@@ -710,6 +711,7 @@ blockquote{margin:0}
       <h2 id="compare-title">Hair system, transplant or wig?</h2>
       <p class="intro">Each suits a different person. We'll tell you honestly which suits you.</p>
     </div>
+    <p class="cmp-hint" aria-hidden="true">Swipe to compare →</p>
     <div class="cmp-wrap" role="region" aria-label="Comparison table" tabindex="0">
       <table class="cmp">
         <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col" class="ours">Hair system</th><th scope="col">Hair transplant</th><th scope="col">Wig</th></tr></thead>

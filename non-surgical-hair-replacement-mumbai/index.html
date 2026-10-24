@@ -401,6 +401,19 @@ blockquote{margin:0}
 @media (min-width:1000px){.colophon{padding-right:200px}}
 .cmp-hint{display:none;margin:0 0 8px;font-family:var(--f-label);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-text)}
 @media (max-width:620px){.cmp-hint{display:block}}
+
+.reviews{list-style:none;margin:0;padding:0;columns:1;column-gap:40px}
+.rv{break-inside:avoid;padding:22px 0;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:10px}
+.rv .stars{color:var(--gold);letter-spacing:.15em;font-size:14px}
+.rv blockquote{margin:0}
+.rv blockquote p{margin:0;font-family:var(--f-display);font-size:21px;line-height:1.4;color:var(--ink)}
+.rv blockquote p::before{content:"“"}.rv blockquote p::after{content:"”"}
+.rv-by{margin:0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;font-size:14px;color:var(--ink-2)}
+.rv-by b{font-weight:600;color:var(--ink)}
+@media (min-width:700px){.reviews{columns:2}}
+@media (min-width:1100px){.reviews{columns:3}}
+.nav a{white-space:nowrap}
+@media (min-width:1000px) and (max-width:1339px){.nav{display:none!important}.menu-btn{display:inline-flex!important}.site-header .wrap{gap:16px}.header-cta{margin-left:auto}}
 .hero-vid{width:100%;height:100%;object-fit:cover;object-position:60% center;filter:sepia(.18) saturate(.9)}
 
 .concerns{list-style:none;margin:0;padding:0;display:grid;gap:36px 24px;grid-template-columns:1fr 1fr}
@@ -435,6 +448,7 @@ blockquote{margin:0}
     <nav class="nav" aria-label="Main">
       <ul>
         <li><a href="#results">Results</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#services">Hair Systems</a></li>
         <li><a href="#extensions">Extensions</a></li>
         <li><a href="#atelier">The Atelier</a></li>
@@ -457,6 +471,7 @@ blockquote{margin:0}
     <nav aria-label="Menu">
       <ol>
         <li><a href="#results" data-close>Results <small>Before &amp; after</small></a></li>
+        <li><a href="#reviews" data-close>Reviews <small>Google, 5 stars</small></a></li>
         <li><a href="#services" data-close>Hair Systems <small>Men &amp; women</small></a></li>
         <li><a href="#extensions" data-close>Extensions <small>Remy human hair</small></a></li>
         <li><a href="#atelier" data-close>The Atelier <small>Private suites</small></a></li>
@@ -599,8 +614,24 @@ blockquote{margin:0}
   </div>
 </section>
 
+<!-- Reviews -->
+<section class="dept band" id="reviews" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="dept-head">
+      <p class="label gold">Google reviews</p>
+      <h2 id="reviews-title">In their <em>own</em> words.</h2>
+      <p class="intro">Shortened, otherwise as written. Every one is five stars.</p>
+    </div>
+    <ul class="reviews"><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>Result is absolutely fine and super natural, hair flow is very very superb like my own hair.</p></blockquote><p class="rv-by"><b>Bhim Bokki</b><span>Hair replacement</span></p></li><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>This is my first hair system. I was so nervous but now I got this fantastic look… they recommend me with low density system to start.</p></blockquote><p class="rv-by"><b>Love Kush</b><span>First hair system, age 26</span></p></li><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>Hair quality is soft, silky and tangle-free… I got straight long hair and I can style it. I made a ponytail, braid, everything works.</p></blockquote><p class="rv-by"><b>Samreen Ahmad</b><span>Women’s hair, after one month</span></p></li><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>The precision with which they matched my hair color, texture, density, and the unique contours of my head is remarkable.</p></blockquote><p class="rv-by"><b>Avdhesh Kumar</b><span>Pune · first custom system</span></p></li><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>Tho I went to others… I was disappointed, but after I came to Mahil… I was so happy. I rate him the highest in Mumbai… simply the best.</p></blockquote><p class="rv-by"><b>Lavanya Shrivastava</b><span>Wearing hair pieces since 2018</span></p></li><li class="rv"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote><p>I know him since almost 9 years… The shop is always clean and hygienic. He is flexible with timing also.</p></blockquote><p class="rv-by"><b>Aby Robinson</b><span>Maintenance client</span></p></li></ul>
+    <div class="results-foot">
+      <p class="small">Read the full reviews, and leave your own, on Google.</p>
+      <a class="textlink" href="https://www.google.com/search?q=Aviora+Atelier+Mumbai+reviews" target="_blank" rel="noopener">All reviews on Google <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
 <!-- Services -->
-<section class="dept band" id="services" aria-labelledby="services-title">
+<section class="dept" id="services" aria-labelledby="services-title">
   <div class="wrap">
     <div class="dept-head">
       <p class="label gold">Two disciplines</p>
